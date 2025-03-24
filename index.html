@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo.jpg"></a>
+        <h1>Chilito</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="quienes somos.html">quienes somos</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="imagen/somosesos.jpg" alt="quienes_somos" width="300" heigth="350" />
+<br>
+            </div>
+            <div class="derecha">
+                <h2>Chilito</h2>
+                <p>somos chilito, una empresa 100% dedicada a la producción de chile habanero en sus diferentes presentaciones siempre buscando ofrecerle el mejor producto y de la mayor calidad, dominando el mercado y tratando de mejorar para usted.</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>PROMOCIONES</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <img src="imagen/producto3.jpeg" alt="Producto 1">
+                    <div class="producto-info">
+                        <h2>Promoción limitada!!</h2>
+                        <p>en la primera compra de 1 chili curtido llevate otro totalmente gratis!!</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <img src="imagen/producto 6.jpeg" alt="Producto 2">
+                    <div class="producto-info">
+                        <h2>Promoción por tiempo limitado!!</h2>
+                        <p>de las salsas mas picosas y las mas pedidas, llevate 2 al precio de una!!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Servicios y Precios</h2>
+                <ul>
+                    <li>servicio uno patrocinio: $56</li>
+                    <li>servicio dos regalo: $45</li>
+                    <li>servicio tres a domicilio: $100</li>
+                    <li>servicio cuatro: desde $20</li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="imagen/servi.pepe.jpeg"text=Servicio" alt="Servicio">
+            </div>
+        </section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Nuestras Marcas</h2>
+            <div class="brands">
+                <img src="imagen/pepe.png"?text=Marca+1" alt="Marca 1">
+                <img src="imagen/chilin.jpeg"?text=Marca+2" alt="Marca 2">
+                <img src="imagen/ancho.jpeg"?text=Marca+3" alt="Marca 3">
+                <img src="imagen/pariente.png"?text=Marca+4" alt="Marca 4">
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Mi empresa_CHILITO. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: chilito29@.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>
